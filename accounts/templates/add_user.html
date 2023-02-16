@@ -1,0 +1,14 @@
+<html>
+
+<body>
+    <h1>Add User</h1>
+
+    <form action="/accounts/add_user" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
